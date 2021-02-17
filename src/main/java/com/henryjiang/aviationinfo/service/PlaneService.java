@@ -4,6 +4,7 @@ import com.henryjiang.aviationinfo.dao.PlaneDao;
 import com.henryjiang.aviationinfo.model.Plane;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.data.mongodb.core.query.Query;
 
 import java.util.List;
 
@@ -19,6 +20,10 @@ public class PlaneService {
 
     public List<Plane> getAllPlanes() {
         return planeDao.getAllPlanes();
+    }
+
+    public List<Plane> getPlanesByAttribute(String attribute, String name) {
+        return planeDao.getPlanesByAttribute(attribute, name);
     }
 
     public void insertPlane(Plane plane) {
