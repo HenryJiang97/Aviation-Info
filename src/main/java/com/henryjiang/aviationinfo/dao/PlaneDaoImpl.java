@@ -10,18 +10,16 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Component
-public class PlaneDaoImpl implements PlaneDao{
+public class PlaneDaoImpl implements PlaneDao {
 
     @Resource
     private MongoTemplate mongoTemplate;
 
-    @Override
     public List<Plane> getAllPlanes() {
         List<Plane> planes = mongoTemplate.findAll(Plane.class);
         return planes;
     }
 
-    @Override
     public List<Plane> getPlanesByAttribute(String attribute, String name) {
         Query query = new Query();
         query.addCriteria(Criteria.where(attribute).is(name));
@@ -29,7 +27,6 @@ public class PlaneDaoImpl implements PlaneDao{
         return planes;
     }
 
-    @Override
     public void insertPlane(Plane plane) {
         mongoTemplate.save(plane);
     }

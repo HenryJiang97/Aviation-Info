@@ -4,10 +4,10 @@ import com.henryjiang.aviationinfo.model.Plane;
 import com.henryjiang.aviationinfo.service.PlaneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.data.mongodb.core.query.Query;
 
 import java.util.List;
 
+@CrossOrigin(maxAge = 3600)
 @RestController
 @RequestMapping("api/plane")
 public class PlaneController {

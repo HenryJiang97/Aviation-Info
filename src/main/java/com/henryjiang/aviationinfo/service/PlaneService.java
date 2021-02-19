@@ -4,7 +4,6 @@ import com.henryjiang.aviationinfo.dao.PlaneDao;
 import com.henryjiang.aviationinfo.model.Plane;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.data.mongodb.core.query.Query;
 
 import java.util.List;
 
