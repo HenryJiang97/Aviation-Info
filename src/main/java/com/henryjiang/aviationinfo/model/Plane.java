@@ -11,16 +11,18 @@ public class Plane{
     private String id;
     private String name;
     private String manufacturer;
+    private String model;
 //    private Dimension dimension;
 //    private Engine engine;
 
 
     public Plane() {}
 
-    public Plane(String id, String name, String manufacturer) {
+    public Plane(String id, String name, String manufacturer, String model) {
         this.id = id;
         this.name = name;
         this.manufacturer = manufacturer;
+        this.model = model;
     }
 
     public String getId() {
@@ -45,5 +47,13 @@ public class Plane{
 
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 }
