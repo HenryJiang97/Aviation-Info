@@ -4,6 +4,13 @@ public class Model {
 
     private String id;
     private String name;
+    private String manufacturer;
+
+    public Model(String id, String name, String manufacturer) {
+        this.id = id;
+        this.name = name;
+        this.manufacturer = manufacturer;
+    }
 
     public String getId() {
         return id;
@@ -19,5 +26,13 @@ public class Model {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
     }
 }
