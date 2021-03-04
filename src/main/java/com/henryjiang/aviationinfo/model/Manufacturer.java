@@ -1,15 +1,16 @@
 package com.henryjiang.aviationinfo.model;
 
-import java.util.UUID;
 
 public class Manufacturer {
 
     private String id;
     private String name;
+    private String bioLink;
 
-    public Manufacturer(String id, String name) {
+    public Manufacturer(String id, String name, String bioLink) {
         this.id = id;
         this.name = name;
+        this.bioLink = bioLink;
     }
 
     public String getId() {
@@ -26,5 +27,13 @@ public class Manufacturer {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getBio() {
+        return bioLink;
+    }
+
+    public void setBio(String bioLink) {
+        this.bioLink = bioLink;
     }
 }

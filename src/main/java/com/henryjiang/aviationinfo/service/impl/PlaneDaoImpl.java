@@ -1,6 +1,6 @@
-package com.henryjiang.aviationinfo.dao;
+package com.henryjiang.aviationinfo.service.impl;
 
-import com.henryjiang.aviationinfo.model.Model;
+import com.henryjiang.aviationinfo.dao.PlaneDao;
 import com.henryjiang.aviationinfo.model.Plane;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
